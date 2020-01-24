@@ -11,14 +11,16 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+	  "courseData": "start-python.sh"
     },
     "finish": {
       "text": "finish.md"
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "terminal",
+	"uisettings": "python"
   },
   "backend": {
     "imageid": "python"
