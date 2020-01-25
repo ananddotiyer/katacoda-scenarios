@@ -1,5 +1,11 @@
 {
   "title": "Brand",
   "description": "Brand new course in Python",
-  "courses": []
+  "courses": [
+          {
+        "course_id": "python",
+        "title": "Scenario with python",
+        "description": "Katacoda Scenario Example"
+      },
+  ]
 }
