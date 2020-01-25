@@ -13,5 +13,5 @@
 
 ```python
 a = 'anand'
-print()
+print(a)
 ```
