@@ -15,13 +15,13 @@
       "text": "intro.md",
 	  "courseData": "start-python.sh"
     },
-	"files": [
-        "app.py"
-    ],
     "finish": {
       "text": "finish.md"
     }
   },
+  "files": [
+        "app.py"
+    ],  
   "environment": {
     "uilayout": "editor-terminal",
 	"uisettings": "python",
