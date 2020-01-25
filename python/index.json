@@ -8,13 +8,16 @@
       {
         "title": "Step 1",
         "text": "step1.md",
-	"courseData": "start-python.sh"
+	"code": "start-python.sh"
       }
     ],
     "intro": {
       "text": "intro.md",
 	  "courseData": "start-python.sh"
     },
+	"files": [
+        "app.py"
+    ],
     "finish": {
       "text": "finish.md"
     }
