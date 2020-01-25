@@ -24,7 +24,8 @@
   },
   "environment": {
     "uilayout": "editor-terminal",
-	"uisettings": "python"
+	"uisettings": "python",
+	"uieditorpath": "/home/scrapbook/tutorial/example"
   },
   "backend": {
     "imageid": "python"
