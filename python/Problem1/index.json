@@ -8,7 +8,7 @@
       {
         "title": "Step 1",
         "text": "step1.md",
-	"courseData": "start-python.sh"
+	"code": "start-python.sh"
       }
     ],
     "intro": {
@@ -19,9 +19,13 @@
       "text": "finish.md"
     }
   },
+  "files": [
+        "app.py"
+    ],  
   "environment": {
     "uilayout": "editor-terminal",
-	"uisettings": "python"
+	"uisettings": "python",
+	"uieditorpath": "/home/scrapbook/tutorial/example"
   },
   "backend": {
     "imageid": "python"
