@@ -23,7 +23,7 @@
 		"anotherfile.py"
     ],  
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "editor-terminal",
 	"uisettings": "python",
 	"uieditorpath": "/home/scrapbook/tutorial/example"
   },
