@@ -1,4 +1,6 @@
-## Task
+Following is a demonstration of the impact of setting the __name__ variable in the main program Vs module.
+
+We will start with two files, myfile.py and anotherfile.py.
 
 ### myfile.py
 <pre class="file" data-filename="myfile.py" data-target="replace">
@@ -18,6 +20,7 @@ if __name__ == "__main__":
 	print("Hello again")
 </pre>
 
+
 First, execute anotherfile.py.
 
 `python anotherfile.py`{{execute}}
@@ -34,4 +37,10 @@ Notice that this time, it prints
 - **anotherfile** due to the line 3 of anotherfile.py and 
 - **\__main__** due to line 3 of myfile.py.
 
+Enter the python shell, if you wish to practice on the shell.
 
+`python3`{{execute}}
+
+Exit the shell, if you wish to return to experimenting with the files again.
+
+`exit`{{execute}}
