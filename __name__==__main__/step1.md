@@ -20,13 +20,13 @@ if __name__ == "__main__":
 
 First, execute anotherfile.py.
 
-`python anotherfile.py` {{execute}}
+`python anotherfile.py`{{execute}}
 
 Notice that it prints **__main__** twice, the first time due to line-3, and second time due to line-6 (when run as the the main program)
 
 Now, execute myfile.py.
 
-`python myfile.py` {{execute}}
+`python myfile.py`{{execute}}
 
 Notice that this time, it prints **anotherfile** due to the line-3 of anotherfile.py, and **__main__** due to line-3 of myfile.py.
 
