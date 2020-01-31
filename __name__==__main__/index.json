@@ -1,0 +1,33 @@
+{
+  "title": "__name__==__main__",
+  "description": "__name__ == \"__main__\"",
+  "difficulty": "Intermediate",
+  "time": "10",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md",
+		"code":  "start-python.sh"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "files": [
+        "myfile.py",
+		"anotherfile.py"
+    ],  
+  "environment": {
+    "uilayout": "editor-terminal"
+	"uisettings": "python",
+	"uieditorpath": "/home/scrapbook/tutorial/example"
+  },
+  "backend": {
+    "imageid": "python"
+  }
+}
