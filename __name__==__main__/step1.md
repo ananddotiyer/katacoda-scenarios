@@ -43,4 +43,4 @@ Enter the python shell, if you wish to practice on the shell.
 
 Exit the shell, if you wish to return to experimenting with the files again.
 
-`exit`{{execute}}
+`exit()`{{execute}}
