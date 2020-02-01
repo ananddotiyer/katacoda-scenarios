@@ -13,14 +13,21 @@ print(a)`{{execute}}
 
 If you had multiple items to *append*, you will have to use it within a loop.  Thus,
 
-`a = [1, 2, 3]
+<pre class="file" data-filename="app.py" data-target="replace">
+a = [1, 2, 3]
 b = [4, 5]
 for each in b:
 	a.append(each)
-&nbsp;
-print(a)`{{execute}}
 
-or, use the extend method instead.
+print(a)
+</pre>
+
+Now, run this by exiting from the Python shell.
+
+`exit()
+python app.py`{{execute}}
+
+or, use the extend method instead.  Ensure, you're in the shell once again,before you continue `python`{{execute}}
 
 `a = [1, 2, 3]
 b = [4, 5]
