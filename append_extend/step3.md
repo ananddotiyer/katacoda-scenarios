@@ -10,12 +10,14 @@ def append(alist, iterable):
 def extend(alist, iterable):
     alist.extend(iterable)
 
+import timeit
+
 print(min(timeit.repeat(lambda: append([], "abcdefghijklmnopqrstuvwxyz"))))
 
 print(min(timeit.repeat(lambda: extend([], "abcdefghijklmnopqrstuvwxyz"))))
 </pre>
 
-Now, run this by exiting from the Python shell.
+Now, run this by exiting from the Python shell. `exit()`{{execute}}
 
 To run, `python3 app.py`{{execute}}
 

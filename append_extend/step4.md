@@ -15,7 +15,7 @@ merged = list(itertools.chain.from_iterable(list2d))
 print(merged)
 </pre>
 
-Now, run this by exiting from the Python shell.
+Now, run this by exiting from the Python shell. `exit()`{{execute}}
 
 To run, `python3 app.py`{{execute}}
 

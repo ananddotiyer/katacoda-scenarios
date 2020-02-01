@@ -22,7 +22,7 @@ for each in b:
 print(a)
 </pre>
 
-Now, run this by exiting from the Python shell.
+Now, run this by exiting from the Python shell `exit()`{{execute}}
 
 To run, `python3 app.py`{{execute}}
 
@@ -43,7 +43,7 @@ print(a)`{{execute}}
 This also works.
 
 `a = [1, 2, 3]
-b = {4: 'Four', 5: 'Five')
+b = {4: 'Four', 5: 'Five'}
 a.extend(b)
 print(a)`{{execute}}
 
