@@ -17,8 +17,7 @@ print(merged)
 
 Now, run this by exiting from the Python shell.
 
-`exit()
-python app.py`{{execute}}
+To run, `python app.py`{{execute}}
 
 However, if you were to use conventional methods, you would use it like so
 

@@ -24,8 +24,7 @@ print(a)
 
 Now, run this by exiting from the Python shell.
 
-`exit()
-python app.py`{{execute}}
+To run, `python app.py`{{execute}}
 
 or, use the extend method instead.  Ensure, you're in the shell once again,before you continue `python`{{execute}}
 

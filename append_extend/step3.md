@@ -17,8 +17,7 @@ print(min(timeit.repeat(lambda: extend([], "abcdefghijklmnopqrstuvwxyz"))))
 
 Now, run this by exiting from the Python shell.
 
-`exit()
-python app.py`{{execute}}
+To run, `python app.py`{{execute}}
 
 Ensure, you're in the shell once again,before you continue.  `python`{{execute}}
 
