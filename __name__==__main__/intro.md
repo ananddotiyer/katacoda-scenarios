@@ -1,4 +1,4 @@
-What does "\_\_ **name** \_\_ = "\_\_ **main** \_\_" do?
+What does "\_\_**name**\_\_ = "\_\_**main**\_\_" do?
 
 Let's understand it through a little demonstration.
 
