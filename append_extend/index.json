@@ -1,5 +1,5 @@
 {
-  "title": "append Vs extend methods in a list",
+  "title": "append vs extend",
   "description": "a comparison between append and extend methods in a list.",
   "difficulty": "Beginner",
   "time": "15",
@@ -8,22 +8,22 @@
       {
         "title": "Step 1",
         "text": "step1.md",
-		"code": "start_python.sh"
+		"code": "start-python.sh"
       },
       {
         "title": "Step 2",
         "text": "step2.md",
-		"code": "start_python.sh"
+		"code": "start-python.sh"
       },
       {
         "title": "Step 3",
         "text": "step3.md",
-		"code": "start_python.sh"
+		"code": "start-python.sh"
       },
       {
         "title": "Step 4",
         "text": "step4.md",
-		"code": "start_python.sh"
+		"code": "start-python.sh"
       }
     ],
     "intro": {

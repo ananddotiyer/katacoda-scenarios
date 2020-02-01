@@ -1,6 +1,6 @@
 {
   "title": "__name__==__main__",
-  "description": "__name__ == \"__main__\"",
+  "description": "What is the purpose of __name__ == \"__main__\" in python code?",
   "difficulty": "Intermediate",
   "time": "10",
   "details": {
