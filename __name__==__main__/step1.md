@@ -2,30 +2,18 @@ When Python reads a .py file, it will initially set its \_\_ **name** \_\_ varia
 
 Suppose you have saved your code in  **myfile.py**.
 
-When you are running  **myfile.py** , it assigns \_\_ **main** \_\_ to its \_\_ **name** \_\_ variable. It is as if the Python interpreter inserts this at the top of  **myfile.py** , when run as the main program.
-
-\_\_ **name** \_\_ = "\_\_ **main** \_\_"
-
-But, if **anotherfile.py** is imported in **myfile.py**, it assigns "myfile" to the former's  \_\_ **name** \_\_ variable. It is as if the Python interpreter inserts this at the top of  **anotherfile.py**  when it is imported from  **mainfile.py**.
-
-\_\_ **name** \_\_  = "myfile"
-
-Thus, when  **anotherfile.py**  contains the line
-
-if \_\_ **name** \_\_ == "\_\_ **main** \_\_"
-
-contents of the _if _condition gets executed only when  **anotherfile.py**  is run, and not when  **mainfile.py**  is run.
-
-To demonstrate this, let's create two python files  **myfile.py**  and  **anotherfile.py** , with the following contents.
-
-We will start by creating the two files, as follows.
-
 ### myfile.py
 <pre class="file" data-filename="myfile.py" data-target="replace">
 import anotherfile
 
 print(f"__name__: {globals()['__name__']}") # prints "__main__"
 </pre>
+
+When you are running  **myfile.py** , it assigns \_\_ **main** \_\_ to its \_\_ **name** \_\_ variable. It is as if the Python interpreter inserts this at the top of  **myfile.py** , when run as the main program.
+
+\_\_ **name** \_\_ = "\_\_ **main** \_\_"
+
+Here is the contents of anotherfile.py.
 
 ### anotherfile.py
 <pre class="file" data-filename="anotherfile.py" data-target="replace">
@@ -38,6 +26,17 @@ if __name__ == "__main__":
 	print("Hello again")
 </pre>
 
+When **anotherfile.py** gets imported into **myfile.py**, it assigns "myfile" to the former's  \_\_ **name** \_\_ variable. It is as if the Python interpreter inserts this at the top of  **anotherfile.py**  when it is imported from  **mainfile.py**.
+
+\_\_ **name** \_\_  = "myfile"
+
+Thus, when  **anotherfile.py**  contains the line
+
+if \_\_ **name** \_\_ == "\_\_ **main** \_\_"
+
+contents of the _if _condition gets executed only when  **anotherfile.py**  is run, and not when  **mainfile.py**  is run.
+
+Let's get to a demonstration.
 
 First, execute **anotherfile.py**.
 
