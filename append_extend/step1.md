@@ -16,8 +16,9 @@ If you had multiple items to *append*, you will have to use it within a loop.  T
 `a = [1, 2, 3]
 b = [4, 5]
 for each in b:
-	a.append(each)
-print(a)`{{execute}}
+	a.append(each)`{{execute}}
+
+`print(a)`{{execute}}
 
 or, use the extend method instead.
 
