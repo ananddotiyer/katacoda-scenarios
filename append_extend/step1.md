@@ -17,7 +17,7 @@ If you had multiple items to *append*, you will have to use it within a loop.  T
 b = [4, 5]
 for each in b:
 	a.append(each)
-
+&nbsp;
 print(a)`{{execute}}</pre>
 
 or, use the extend method instead.
