@@ -1,0 +1,39 @@
+As the name indicates, *append* appends to the end of a given list.
+
+Let's see an example.
+
+`a = [1, 2, 3]`{{execute}}
+
+Following appends 4 to the list *a*.
+
+`a.append(4)`{{execute}}
+
+*extend* adds individual items from a given iterable to the original list.  The iterable can be a list, dictionary, set or tuple.
+
+If you had multiple items to *append*, you will have to use it within a loop.  Thus,
+
+`a = [1, 2, 3]
+b = [4, 5]
+# a.append(b)  # will not work
+for each in b:
+	a.append(each)`{{execute}}
+
+or, use the extend method instead.
+
+`a = [1, 2, 3]
+b = [4, 5]
+a.extend(b)`{{execute}}
+
+*extend* could be used, even when b is a set, or a tuple or a dictionary.  For example,
+
+`a = [1, 2, 3]
+b = (4, 5)
+a.extend(b)`{{execute}}
+
+This also works.
+
+`a = [1, 2, 3]
+b = {4: 'Four', 5: 'Five')
+a.extend(b)`{{execute}}
+
+In the last case, note that the dictionary keys gets added to the original list *a*.
