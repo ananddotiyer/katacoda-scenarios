@@ -1,3 +1,4 @@
 Hope you enjoyed learning!
 
-https://pythonmaster.co.in/blog/what-does-if-__name__-__main__-do/
+Refer to the blog article [here](https://pythonmaster.co.in/blog/what-does-if-__name__-__main__-do/),
+
