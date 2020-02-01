@@ -17,7 +17,7 @@ print(merged)
 
 Now, run this by exiting from the Python shell.
 
-To run, `python app.py`{{execute}}
+To run, `python3 app.py`{{execute}}
 
 However, if you were to use conventional methods, you would use it like so
 
@@ -32,6 +32,6 @@ def from_iterable(iterables):
 print(list(from_iterable(list2d)))
 </pre>
 
-To run, `python app.py`{{execute}}
+To run, `python3 app.py`{{execute}}
 
 In both the cases above, it flattens the list of lists.
