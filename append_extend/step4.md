@@ -21,4 +21,4 @@ def from_iterable(iterables):
         for element in it:
             yield element
 
-list(from_iterable(list2d))  # flattens the list of lists`{{execute}}
+print(list(from_iterable(list2d)))  # flattens the list of lists`{{execute}}

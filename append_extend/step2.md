@@ -33,3 +33,10 @@ add_address = id(a)
 add_address == orig_address  # return True, indicating that the original list is mutated.
 
 As an interesting sidenote, if you extend a list with a string, it'll add the individual characters of the string to the original list.  This is because a string is treated as a list/sequence of characters.
+
+Try this.
+
+`a = ['a', 'b', 'c']
+b = "def"
+a.extend(b)
+print(a)`{{execute}}
