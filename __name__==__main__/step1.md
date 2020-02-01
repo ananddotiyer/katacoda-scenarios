@@ -2,7 +2,6 @@ When Python reads a .py file, it will initially set its \_\_ **name** \_\_ varia
 
 Suppose you have saved your code in  **myfile.py**.
 
-### myfile.py
 <pre class="file" data-filename="myfile.py" data-target="replace">
 import anotherfile
 
@@ -15,7 +14,6 @@ When you are running  **myfile.py** , it assigns \_\_ **main** \_\_ to its \_\_ 
 
 Here is the contents of anotherfile.py.
 
-### anotherfile.py
 <pre class="file" data-filename="anotherfile.py" data-target="replace">
 print("Hello")
 
@@ -36,7 +34,7 @@ if \_\_ **name** \_\_ == "\_\_ **main** \_\_"
 
 contents of the _if _condition gets executed only when  **anotherfile.py**  is run, and not when  **mainfile.py**  is run.
 
-Let's get to a demonstration.
+Let's get to a demonstration.  Make sure that contents of both files have been "copied to the editor".
 
 First, execute **anotherfile.py**.
 
