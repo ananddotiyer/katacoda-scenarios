@@ -5,12 +5,12 @@ Refer to [the documentation](https://docs.python.org/2/library/timeit.html) for 
 `def append(alist, iterable):
     for item in iterable:
         alist.append(item)
-
+\
 def extend(alist, iterable):
     alist.extend(iterable)
-	
-print(min(timeit.repeat(lambda: append(\[\], "abcdefghijklmnopqrstuvwxyz"))))
-
-print(min(timeit.repeat(lambda: extend(\[\], "abcdefghijklmnopqrstuvwxyz"))))`{{execute}}
+\	
+print(min(timeit.repeat(lambda: append([], "abcdefghijklmnopqrstuvwxyz"))))
+\
+print(min(timeit.repeat(lambda: extend([], "abcdefghijklmnopqrstuvwxyz"))))`{{execute}}
 
 This shows that *extend* is faster than *append*.  THis is true as far there's at least one element to add.  If there's a single element to add to the list, *extend* if marginally slower, and hence it's recommended to use *append* in such cases.  

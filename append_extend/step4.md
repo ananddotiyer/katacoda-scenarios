@@ -20,7 +20,7 @@ def from_iterable(iterables):
     for it in iterables:
         for element in it:
             yield element
-
+\
 print(list(from_iterable(list2d)))`{{execute}}
 
 In both the cases above, it flattens the list of lists.

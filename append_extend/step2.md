@@ -7,7 +7,6 @@ a.append(4)
 append_address = id(a)
 a.extend(b)
 extend_address = id(a)
-
 orig_address == append_address == extend_address`{{execute}}
 
 In the above example, it returns True indicating that all objects point to the same memory location
@@ -19,7 +18,6 @@ b = [4, 5]
 orig_address = id(a)
 a = a + b
 print(a)
-
 add_address = id(a)
 add_address == orig_address`{{execute}}
 
@@ -32,7 +30,6 @@ b = [4, 5]
 orig_address = id(a)
 a += b
 print(a)
-
 add_address = id(a)
 add_address == orig_address`{{execute}}
 
