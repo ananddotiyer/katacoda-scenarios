@@ -1,0 +1,38 @@
+{
+  "title": "what does * and ** mean?",
+  "description": "what does * and ** mean, and what are its various usages?",
+  "difficulty": "Intermediate",
+  "time": "15",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3",
+        "text": "step3.md",
+		"code": "start-python.sh"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "files": [
+        "app.py"
+    ],  
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "python"
+  }
+}
