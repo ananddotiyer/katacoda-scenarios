@@ -8,6 +8,10 @@ def numbers(*args):
         print(a)
 </pre>
 
+To run, `python3 app.py`{{execute}}
+
+Ensure, you're in the shell,before you continue.  `python`{{execute}}
+
 Now, call the function as
 
 `numbers(1)`{{execute}}
@@ -26,6 +30,11 @@ def employee(**kwargs):
         print(a, kwargs[a])
 </pre>
 
+Now, exit from the Python shell before running this `exit()
+python3 app.py`{{execute}}
+
+Ensure, you're in the shell,before you continue.  `python`{{execute}}
+
 Now, call the function as
 
 `employee(name='one')`{{execute}}
@@ -41,6 +50,11 @@ def employee(*args, **kwargs):
 	print (args)
 	print (kwargs)
 </pre>
+
+Now, exit from the Python shell before running this `exit()
+python3 app.py`{{execute}}
+
+Ensure, you're in the shell,before you continue.  `python`{{execute}}
 
 Now, call the function as
 

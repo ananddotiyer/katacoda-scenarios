@@ -11,6 +11,11 @@ def foo(a, b, name, age, salary):
     print(a, name)
 </pre>
 
+Now, exit from the Python shell before running this `exit()
+python3 app.py`{{execute}}
+
+Ensure, you're in the shell,before you continue.  `python`{{execute}}
+
 Now, call the function,
 
 `numbers = [1, 2, 3, 4, 5]
@@ -35,6 +40,11 @@ We'll solve this by using "keyword-only" arguments: arguments that can only be s
 def foo(a, b, *, name, age, salary):
     print(a, name)
 </pre>
+
+Now, exit from the Python shell before running this `exit()
+python3 app.py`{{execute}}
+
+Ensure, you're in the shell,before you continue.  `python`{{execute}}
 
 Note the *\** used as the third parameter in the funtion *foo*.  Any parameters after *\** are required to be keyword-only arguments.
 

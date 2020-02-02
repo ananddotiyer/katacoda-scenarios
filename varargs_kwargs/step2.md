@@ -8,6 +8,10 @@ numbers = [1, 2]
 employee = {'name': 'one', 'age': 27, 'salary': 10000}
 </pre>
 
+To run, `python3 app.py`{{execute}}
+
+Ensure, you're in the shell,before you continue.  `python`{{execute}}
+
 Now, calling the function unpacks both iterables, and uses them as appropriate.
 
 `foo(*numbers, **employee)`{{execute}}
@@ -23,7 +27,6 @@ As another example, we can use dict expansion in str.format
 
 `foo = 'FOO'
 bar = 'BAR'
-
 'this is foo, {foo} and bar, {bar}'.format(**locals())`{{execute}}
 
 \* can also unpack a generator.
