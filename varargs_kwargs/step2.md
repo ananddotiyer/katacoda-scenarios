@@ -6,23 +6,30 @@ def foo(a, b, name, age, salary):
 
 numbers = [1, 2]
 employee = {'name': 'one', 'age': 27, 'salary': 10000}
+
+foo(*numbers, **employee)
 </pre>
 
 To run, `python3 app.py`{{execute}}
 
-Ensure, you're in the shell,before you continue.  `python`{{execute}}
-
-Now, calling the function unpacks both iterables, and uses them as appropriate.
-
-`foo(*numbers, **employee)`{{execute}}
+Note that upon calling the function it unpacks both iterables, and uses them as appropriate.
 
 In this example, it prints the first item in the *numbers* list and *name* from the *employee* dict.
 
 The keys in *employee* have to be named exactly like the parameters of function foo. Otherwise it will throw a TypeError.
 
-`mydict = {'x':1,'y':2,'z':3,'badnews':9}
-foo(**mydict)`{{execute}}
- 
+<pre class="file" data-filename="app.py" data-target="replace">
+def foo(a, b, name, age, salary):
+    print(a, name)
+
+mydict = {'x':1,'y':2,'z':3,'badnews':9}
+foo(**mydict)
+</pre>
+
+To run, `python3 app.py`{{execute}}
+
+Ensure, you're in the shell,before you continue.  `python3`{{execute}}
+
 As another example, we can use dict expansion in str.format
 
 `foo = 'FOO'

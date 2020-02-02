@@ -6,19 +6,13 @@ The \*args and \*\*kwargs can be used to allow an arbitrary number of arguments 
 def numbers(*args):
     for a in args:
         print(a)
+		
+numbers(1)
+
+numbers(1,2,3)
 </pre>
 
 To run, `python3 app.py`{{execute}}
-
-Ensure, you're in the shell,before you continue.  `python`{{execute}}
-
-Now, call the function as
-
-`numbers(1)`{{execute}}
-
-and
-
-`numbers(1,2,3)`{{execute}}
 
 Note that the function prints any number of arguments passed into it.
 
@@ -28,20 +22,15 @@ Note that the function prints any number of arguments passed into it.
 def employee(**kwargs):
     for a in kwargs:
         print(a, kwargs[a])
+		
+employee(name='one')
+
+employee(name='one', age=27, salary=10000)
 </pre>
 
-Now, exit from the Python shell before running this `exit()
-python3 app.py`{{execute}}
+To run, `python3 app.py`{{execute}}
 
-Ensure, you're in the shell,before you continue.  `python`{{execute}}
-
-Now, call the function as
-
-`employee(name='one')`{{execute}}
-
-and
-
-`employee(name='one', age=27, salary=10000)`{{execute}}
+Both function calls pass all of the named parameters into the function kwargs.
 
 In both cases, we can also use normal arguments to allow a set of fixed and some variable arguments.
 
@@ -49,17 +38,10 @@ In both cases, we can also use normal arguments to allow a set of fixed and some
 def employee(*args, **kwargs):
 	print (args)
 	print (kwargs)
+	
+employee(1, name='one')
+
+employee(1, 2, name='one', age=27)
 </pre>
 
-Now, exit from the Python shell before running this `exit()
-python3 app.py`{{execute}}
-
-Ensure, you're in the shell,before you continue.  `python`{{execute}}
-
-Now, call the function as
-
-`employee(1, name='one')`{{execute}}
-
-and
-
-`employee(1, 2, name='one', age=27)`{{execute}}
+To run, `python3 app.py`{{execute}}

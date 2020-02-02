@@ -9,26 +9,29 @@ Introduced into Python 3 is a feature wherein, function parameters accept only k
 <pre class="file" data-filename="app.py" data-target="replace">
 def foo(a, b, name, age, salary):
     print(a, name)
+
+numbers = [1, 2, 3, 4, 5]
+employee = {'name': 'one', 'age': 27, 'salary': 10000}
+foo(*numbers)
 </pre>
 
 Now, exit from the Python shell before running this `exit()
 python3 app.py`{{execute}}
 
-Ensure, you're in the shell,before you continue.  `python`{{execute}}
-
-Now, call the function,
-
-`numbers = [1, 2, 3, 4, 5]
-employee = {'name': 'one', 'age': 27, 'salary': 10000}
-foo(*numbers)`{{execute}}
-
 In this example, all 5 items in the *numbers* list are unpacked and used as function parameters.
 
 Now, let's see what happens when you supplied the \*employee\* dict as keyword arguments.
 
-`numbers = [1, 2, 3, 4, 5]
+<pre class="file" data-filename="app.py" data-target="replace">
+def foo(a, b, name, age, salary):
+    print(a, name)
+
+numbers = [1, 2, 3, 4, 5]
 employee = {'name': 'one', 'age': 27, 'salary': 10000}
-foo(*numbers, **employee)`{{execute}}
+foo(*numbers, **employee)
+</pre>
+
+To run, `python3 app.py`{{execute}}
 
 Contrary to what is expected, this results in *TypeError: foo() got multiple values for argument 'name'*
 
@@ -39,23 +42,27 @@ We'll solve this by using "keyword-only" arguments: arguments that can only be s
 <pre class="file" data-filename="app.py" data-target="replace">
 def foo(a, b, *, name, age, salary):
     print(a, name)
+
+numbers = [1, 2, 3, 4, 5]
+employee = {'name': 'one', 'age': 27, 'salary': 10000}
+foo(*numbers, **employee)
 </pre>
-
-Now, exit from the Python shell before running this `exit()
-python3 app.py`{{execute}}
-
-Ensure, you're in the shell,before you continue.  `python`{{execute}}
 
 Note the *\** used as the third parameter in the funtion *foo*.  Any parameters after *\** are required to be keyword-only arguments.
 
-`numbers = [1, 2, 3, 4, 5]
-employee = {'name': 'one', 'age': 27, 'salary': 10000}
-foo(*numbers, **employee)`{{execute}}
+To run, `python3 app.py`{{execute}}
 
 will now result in *TypeError: foo() takes 2 positional arguments but 5 positional arguments (and 3 keyword-only arguments) were given*, as expected.
 
-Following would work as expected.
+Following is an example, where exactly two positional arguments are used, before keyword-only arguments.  In this case, it would work as expected.
 
-`numbers = [1, 2]
+<pre class="file" data-filename="app.py" data-target="replace">
+def foo(a, b, *, name, age, salary):
+    print(a, name)
+
+numbers = [1, 2]
 employee = {'name': 'one', 'age': 27, 'salary': 10000}
-foo(*numbers, **employee)`{{execute}}
+foo(*numbers, **employee)
+</pre>
+
+To run, `python3 app.py`{{execute}}
