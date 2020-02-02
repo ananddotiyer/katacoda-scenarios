@@ -7,9 +7,9 @@ def numbers(*args):
     for a in args:
         print(a)
 		
-numbers(1)
+numbers(1)  # prints 1
 
-numbers(1,2,3)
+numbers(1,2,3)  # prints 1, 2, 3
 </pre>
 
 To run, `python3 app.py`{{execute}}
@@ -23,9 +23,9 @@ def employee(**kwargs):
     for a in kwargs:
         print(a, kwargs[a])
 		
-employee(name='one')
+employee(name='one')  # prints name
 
-employee(name='one', age=27, salary=10000)
+employee(name='one', age=27, salary=10000)  # prints name, age, salary
 </pre>
 
 To run, `python3 app.py`{{execute}}
@@ -39,9 +39,9 @@ def employee(*args, **kwargs):
 	print (args)
 	print (kwargs)
 	
-employee(1, name='one')
+employee(1, name='one')  # prints 1 as tuple, name as dict.
 
-employee(1, 2, name='one', age=27)
+employee(1, 2, name='one', age=27)  # print 1 as tuple, name, age as dict.
 </pre>
 
 To run, `python3 app.py`{{execute}}

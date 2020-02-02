@@ -1,8 +1,16 @@
 When \* and \*\* is used on the left side of the assignment operator, it's termed extended iterable unpacking.
 
-`first, *rest = [1,2,3,4]`{{execute}}
+`first, *rest = [1,2,3,4]
+print (first)
+print (rest)`{{execute}}
 
-`first, *l, last = [1,2,3,4]`{{execute}}
+Except the first item in the list, all others are unpacked into *rest*
+
+`first, *l, last = [1,2,3,4]
+print (first)
+print (rest)`{{execute}}
+
+In this case, the first item is unpacked into *first*, last item into *last* and the remaining into *l*
 
 Introduced into Python 3 is a feature wherein, function parameters accept only keyword arguments, and not positional arguments.
 
@@ -12,7 +20,7 @@ def foo(a, b, name, age, salary):
 
 numbers = [1, 2, 3, 4, 5]
 employee = {'name': 'one', 'age': 27, 'salary': 10000}
-foo(*numbers)
+foo(*numbers)  # unpacks 1 into a, 2 into b, and 3 into name.
 </pre>
 
 Now, exit from the Python shell before running this `exit()
@@ -28,7 +36,7 @@ def foo(a, b, name, age, salary):
 
 numbers = [1, 2, 3, 4, 5]
 employee = {'name': 'one', 'age': 27, 'salary': 10000}
-foo(*numbers, **employee)
+foo(*numbers, **employee)  # unpacks 1 into a, 2 into b.  name parameter gets 3 as well as 'one'.
 </pre>
 
 To run, `python3 app.py`{{execute}}
@@ -45,7 +53,7 @@ def foo(a, b, *, name, age, salary):
 
 numbers = [1, 2, 3, 4, 5]
 employee = {'name': 'one', 'age': 27, 'salary': 10000}
-foo(*numbers, **employee)
+foo(*numbers, **employee)  # can't unpack all items in numbers list, since function needs keyword-only args.
 </pre>
 
 Note the *\** used as the third parameter in the funtion *foo*.  Any parameters after *\** are required to be keyword-only arguments.
@@ -62,7 +70,7 @@ def foo(a, b, *, name, age, salary):
 
 numbers = [1, 2]
 employee = {'name': 'one', 'age': 27, 'salary': 10000}
-foo(*numbers, **employee)
+foo(*numbers, **employee)  # unpacks 1 into a, 2 into b, and 'one' into name.
 </pre>
 
 To run, `python3 app.py`{{execute}}

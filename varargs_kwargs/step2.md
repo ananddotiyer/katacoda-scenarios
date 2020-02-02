@@ -7,7 +7,7 @@ def foo(a, b, name, age, salary):
 numbers = [1, 2]
 employee = {'name': 'one', 'age': 27, 'salary': 10000}
 
-foo(*numbers, **employee)
+foo(*numbers, **employee)  # prints 1, 'one'
 </pre>
 
 To run, `python3 app.py`{{execute}}
@@ -22,7 +22,7 @@ The keys in *employee* have to be named exactly like the parameters of function 
 def foo(a, b, name, age, salary):
     print(a, name)
 
-mydict = {'x':1,'y':2,'z':3,'badnews':9}
+mydict = {'x':1,'y':2,'z':3,'badnews':9}  # TypeError
 foo(**mydict)
 </pre>
 
@@ -40,6 +40,10 @@ bar = 'BAR'
 
 `x = [1, 2, 3]
 y = [4, 5, 6]
-unzip_x, unzip_y = zip(*zip(x, y))`{{execute}}
+unzip_x, unzip_y = zip(*zip(x, y))
+print(unzip_x)
+print(unzip_y)`{{execute}}
+
+It prints (1, 2, 3) for unzip_x and (4, 5, 6) for unzip_y.  
 
 This is because, the inner zip will generate tuples (1, 4), (2, 5), (3, 6).
