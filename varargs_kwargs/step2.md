@@ -16,7 +16,7 @@ Note that upon calling the function it unpacks both iterables, and uses them as 
 
 In this example, it prints the first item in the *numbers* list and *name* from the *employee* dict.
 
-The keys in *employee* have to be named exactly like the parameters of function foo. Otherwise it will throw a TypeError.
+The keys in *employee* have to be named exactly like the parameters of function foo. Otherwise it will throw a *TypeError*.
 
 <pre class="file" data-filename="app.py" data-target="replace">
 def foo(a, b, name, age, salary):
@@ -35,6 +35,8 @@ As another example, we can use dict expansion in str.format
 `foo = 'FOO'
 bar = 'BAR'
 'this is foo, {foo} and bar, {bar}'.format(**locals())`{{execute}}
+
+Note, **locals() refers to a dictionary containing all local variables.
 
 \* can also unpack a generator.
 

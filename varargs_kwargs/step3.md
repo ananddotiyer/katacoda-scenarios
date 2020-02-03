@@ -6,11 +6,12 @@ print (rest)`{{execute}}
 
 Except the first item in the list, all others are unpacked into *rest*
 
-`first, *l, last = [1,2,3,4]
+`first, *between, last = [1,2,3,4]
 print (first)
-print (rest)`{{execute}}
+print (between)
+print (last)`{{execute}}
 
-In this case, the first item is unpacked into *first*, last item into *last* and the remaining into *l*
+In this case, the first item is unpacked into *first*, last item into *last* and the remaining into *between*.
 
 Introduced into Python 3 is a feature wherein, function parameters accept only keyword arguments, and not positional arguments.
 

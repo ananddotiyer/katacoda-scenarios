@@ -30,7 +30,7 @@ employee(name='one', age=27, salary=10000)  # prints name, age, salary
 
 To run, `python3 app.py`{{execute}}
 
-Both function calls pass all of the named parameters into the function kwargs.
+Note that *kwargs* include any number of named parameters passed into the function.
 
 In both cases, we can also use normal arguments to allow a set of fixed and some variable arguments.
 
@@ -43,5 +43,7 @@ employee(1, name='one')  # prints 1 as tuple, name as dict.
 
 employee(1, 2, name='one', age=27)  # print 1 as tuple, name, age as dict.
 </pre>
+
+All named parameters fill up for *kwargs*, and the rest fills up for *args*.
 
 To run, `python3 app.py`{{execute}}
